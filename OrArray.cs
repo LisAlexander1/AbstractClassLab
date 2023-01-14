@@ -36,17 +36,7 @@ namespace AbstractClassLab
 
         public override double[] Sum(double[] plenty)
         {
-            List<double> result = arr.ToList();
-            foreach (var item in plenty)
-            {
-                if (Array.IndexOf(arr, item) == -1)
-                {
-                    result.Add(item);
-                }
-
-            }
-
-            return result.ToArray();
+            return arr.Union(plenty).ToArray();
         }
     }
 }
