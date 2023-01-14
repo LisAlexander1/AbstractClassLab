@@ -1,4 +1,6 @@
-﻿namespace AbstractClassLab
+﻿//Чиноов 22-ИСП-2/1 Задание 81
+
+namespace AbstractClassLab
 {
     internal class Program
     {
@@ -7,10 +9,8 @@
             AndArray andArray = new(new double[] { 1, 2, 3, 4, 5 });
             OrArray orArray = new(new double[] { 1, 2, 3, 4, 5 });
 
-            for (int item_index = 0; item_index < andArray.Arr.Length; item_index++)
-            {
-                Console.Write($"{andArray.Arr[item_index]:F0} ");
-            }
+            
+            Console.WriteLine($"{String.Join(" " ,andArray.Arr)} ");
             Console.WriteLine();
 
             for (int item_index = 0; item_index < orArray.Arr.Length; item_index++)
@@ -51,6 +51,9 @@
             {
                 Console.Write($"{orArray.Arr[item_index]:F2} ");
             }
+            Console.WriteLine();
+
+            Console.WriteLine($"{String.Join(" ", andArray.Arr)} ");
             Console.WriteLine();
 
             Console.ReadKey();
